@@ -3,7 +3,7 @@ import { BlockDiagram } from './components/BlockDiagram';
 import { ControlPanel } from './components/ControlPanel';
 import { TransactionLog } from './components/TransactionLog';
 import { useWebSocketEvents } from './hooks/useWebSocketEvents';
-import { Chip } from 'lucide-react';
+import { Cpu as ChipIcon } from 'lucide-react';
 
 function App() {
   useWebSocketEvents();
@@ -13,7 +13,7 @@ function App() {
       {/* Header */}
       <header className="bg-gray-800 border-b border-gray-700 px-6 py-4">
         <div className="flex items-center gap-3">
-          <Chip className="w-8 h-8 text-blue-400" />
+          <ChipIcon className="w-8 h-8 text-blue-400" />
           <div>
             <h1 className="text-2xl font-bold text-white">ARM SoC Simulator</h1>
             <p className="text-sm text-gray-400">
